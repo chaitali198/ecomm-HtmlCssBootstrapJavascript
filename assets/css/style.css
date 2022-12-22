@@ -1,0 +1,228 @@
+:root {
+    /* font family */
+    --primary-font: 'Lobster', cursive;
+    --secondary-font: 'Lobster', cursive;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+.sec-font {
+    font-family: var(--secondary-font);
+}
+
+
+.cate-bg {
+    background-color: #0E4828;
+} 
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.btn-danger{
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-danger:hover {
+    background: transparent;
+}
+
+#header .fixed-top {
+    box-shadow: 0 0.125rem 0.675rem rgb(0, 0, 0 /5%);
+}
+#header .navbar-nav .nav-item .nav-link {
+    color: black;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+#header .navbar-nav .nav-item .nav-link:hover,
+#header .navbar-nav .nav-item .nav-link:active {
+    color: #F7941D;
+
+}
+
+#header .navbar-nav .nav-item .nav-link.nav-icon {
+    color: #F7941D;
+    /* padding: 0.5rem 1rem;
+    text-align: center; */
+}
+
+
+
+#header .navbar-toggler-icon {
+    width: unset;
+    height: unset;
+}
+#header ,.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#header .dropdown-menu .dropdown-item {
+    color: black;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+#header .dropdown-menu .dropdown-item:hover,
+#header .dropdown-menu .dropdown-item:active {
+    color: #F7941D;
+}
+
+
+.home .home-banner-1 {
+    background-image: url('../imgs/banner-2.jpeg');
+}
+.home .home-banner-2 {
+    background-image: url('../imgs/banner-3.jpg');
+}
+.home .home-banner-1,
+.home .home-banner-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    min-height: 650px;
+    position: relative;
+}
+
+.home .home-banner .home-banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%,-50%);
+    color: white;
+}
+ 
+section {
+    padding: 3rem 0;
+}
+.offers .offer-box .offer-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: all 250ms ease-out;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers .offer-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.offers .offer-box .offer-image::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    
+
+}
+.offers .offer-box .offer-image img {
+    transform: scale(1.02);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #F7941D;
+
+}
+
+.cat-men .nav-pills .nav-link.active {
+    background-color: #F7941D;
+
+}
+.offers .offer-box .offer-info .heading-bigger{
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: uppercase; 
+    font-weight: 400;
+    margin-bottom:0;
+    color:white;
+}
+.offers .offer-box .offer-info .offer-title-1{
+    color:white;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    letter-spacing:2px;
+}
+
+/* login form css */
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #F7941D, #0E4828);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #F7941D, #0E4828);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    /* height: 100vh !important; */
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+/* End login form */
+
+.bg-theme1 {
+    background-color: #0E4828;
+}
+
+.bg-theme2 {
+    background-color: #F7941D;
+}
+
+
+.accordion-button {
+    background-color: transparent !important;
+    color: white;
+}
+.accordion-button:focus {
+    border-color: transparent !important;
+    color: white;
+}
+
+
+.accordion-item {
+    background-color: transparent !important;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+}
+
+
+
+
